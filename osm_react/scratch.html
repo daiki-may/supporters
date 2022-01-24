@@ -1,0 +1,30 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+
+<script>
+    export const app = firebase.initializeApp({
+        apiKey: process.env.REACT_APP_FIREBASE_KEY,
+        authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
+        projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+        storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+        messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
+        appId: process.env.REACT_APP_FIREBASE_APP_ID,
+        measurementId:process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
+    });
+</script>
+
+<p><div id="age"></div></p>
+<p><div id="job"></div></p>
+<p><div id="name"></div></p>
+<script>
+    var db = firebase.firestore();
+    var docRef = db.collection("data").doc("90TwVL13wTuPpmCgw24C")
+        .onSnapshot((doc) => {
+            console.log("Current data: ", doc.data());
+            var hp = doc.data()
+        });
+</script>
+
+<h1>hp</h1>

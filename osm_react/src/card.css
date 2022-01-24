@@ -1,0 +1,40 @@
+.MuiPaper-root {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    width: 100% !important;
+}
+
+element.style {
+    background-color: rgba(210, 17, 68, 0) !important;
+    font-family: Shino !important;
+}
+
+.makeStyles-align_center-10 {
+    max-width: 50% !important;
+    max-height: 30% !important;
+}
+
+.MuiCardContent-root {
+    background-color: white !important;
+}
+
+
+.makeStyles-root-7 {
+    max-width: 100% !important;
+}
+
+@font-face {
+    font-family: 'Shino';
+    src: url('data/JF-Dot-Shinonome12.ttf') format('truetype');
+}
+
+p {
+    font-family: Shino !important;
+}
+
+h2 {
+    font-family: Shino !important;
+}
+
+div {
+    font-family: Shino !important;
+}

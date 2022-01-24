@@ -1,0 +1,38 @@
+body {
+    background-image: url('158e35945dfb441ed15105ed7c0e7849.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.monster{
+    text-align: center;
+
+}
+.column {
+    float: left;
+    width: 33%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.monster-wrapper{
+    position: absolute;
+    top: 35%;
+    /*transform: translate(-50%);*/
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.hp-bar{
+    background-color: aliceblue;
+    height: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: flex-end;
+
+}
